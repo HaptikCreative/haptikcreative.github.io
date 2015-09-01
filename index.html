@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>haptik.</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1, minimal-ui" />
+
+	<link rel="dns-prefetch" href="http://fonts.googleapis.com" />
+	<link rel="dns-prefetch" href="http://code.jquery.com" />
+
+	<link rel="stylesheet" href="animate.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="stylesheet.css" />
+
+</head>
+<body>
+	<header class="tipytop">
+		<div class="plane">
+			<span style="display: block;"><h1 class="title super">haptik</span><span style="color: #66cc99">.</span></h1>
+			<hr />
+				<span class="secondary subheader">Coming Soon</span>
+				<br />
+				<br />
+				<span class="fourth">
+					<a href="https://twitter.com/haptikcreative" class="transition"><i class="fa fa-twitter-square fa-lg"></i></a>  
+					<a href="https://instagram.com/haptikcreative/" class="transition"><i class="fa fa-instagram fa-lg"></i></a>
+					<a href="https://google.com" class="transition"><i class="fa fa-dribbble fa-lg"></i></a>
+				</span>
+		</div>
+	</header>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("body").css("display", "none");
+		$("body").fadeIn(1500);
+		$("a.transition").click(function(event) {
+			event.preventDefault();
+			linkLocation = this.href;
+			$("body").fadeOut(1000,redirectPage);
+		});
+		function redirectPage () {
+			window.location = linkLocation;
+		}
+	});
+</script>
+</body>
+</html>
