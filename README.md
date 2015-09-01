@@ -1,2 +1,2 @@
-# haptikcreative.github.io
-Coming Soon Splash Page 
+# haptikcreative.com
+Coming Soon - Splash Page 
