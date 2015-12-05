@@ -67,7 +67,7 @@ html {
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   width: 100%;
-  overflow: hidden-x;
+  overflow-x: hidden;
   text-align: center;
 }
 
